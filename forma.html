@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lazar Velimirović-forma</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="primary-form.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="column">
+				<div id="logo-i-social">
+					<div id="logo-holder">
+						<img alt="Loading logo" src="assets/logo1.svg"/>
+					</div>
+					<div id="social-holder">
+						<a href="https://www.facebook.com/">
+							<img alt="Facebook" src="assets/facebook.svg"/>
+						</a>
+						
+						<a href="#">
+							<img alt="Instagram" src="assets/instagram.svg"/>
+						</a>
+						
+						<a href="#">
+							<img alt="Twitter" src="assets/twitter.svg"/>
+						</a>
+						
+						<a href="#">
+							<img alt="Behance" src="assets/behance.svg"/>
+						</a>
+					</div>
+				</div>
+				
+				<nav id="main-menu">
+					<a href="index.html" >Pocetna</a>
+					<a href="forma.html" class="active">Forma</a>
+				</nav>
+			</div>
+		</div>
+		
+		<div class="page" id="pocetna-forma">
+			<div class="column">
+				<h1>Kontakt forma</h1>
+				<strong><p class="align-center">Ukoliko zelite da me kontaktirate ili imate poslovni predlog, popunite formu</p></strong>
+			
+				<div class="dark-box tamno">
+					<form class="forma" name="contact" method="POST" action="Oce.php">
+						<td>
+						<label for="input-ime">Ime: </label>
+						<input type="text" name="ime" id="input-ime" required>
+						<span id="Ime"></span><br>
+						</td>
+						
+						<td>
+						<label for="input-prezime">Prezime: </label>
+						<input type="text" name="prezime" id="input-prezime" required>
+						<span id="Prezime"></span><br>
+						</td>
+						
+						<td>
+						<label for="input-email">E-mail</label>
+						<input type="email" name="email" id="input-email" required>
+						<span id="Mejl"></span><br>
+						</td>
+						
+						<td>
+						<label for="gender">Pol: </label>
+						<label for="male">Muski </label>
+						<input type="radio" name="gender" value="male" checked><br>
+						<label for="female">Zenski </label>
+						<input type="radio" name="gender" value="female"><br>
+						</td>
+						
+						<td>
+						<label for="i-kontakt">Svrha kontakta: </label>
+						<input type="text" name="kontakt" id="i-kontakt" list="svrha-kontakta" required>
+						<datalist id="svrha-kontakta">
+							<option value="Predlog">
+							<option value="Posao">
+							<option value="Drugo..">
+						</datalist><br>
+						<td/>
+						
+						<td>
+						<label for="i-prihvatam">Prihvatam uslove koriscenja: </label>
+						<input type="checkbox" name="prihvatam" id="i-prihvatam" value="1"><br>
+						</td>
+						
+						<td>
+						<label for="input-com">Komentar: </label><br>
+						<textarea rows="6" cols="30"  name="komentar" id="input-com" required></textarea>
+						<span id="Komentar"></span><br>
+						</td>
+						<button type="submit" value="Posalji" onclick="kontakto();">Posalji</button> 
+						<button type="reset">Ponisti</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<script src ="main.js"></script>
+	</body>
+</html>

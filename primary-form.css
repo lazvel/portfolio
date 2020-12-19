@@ -1,0 +1,36 @@
+body {
+	
+}
+#pocetna-forma{
+	text-align: center;
+	color: #fff;
+	background: url('assets/forma1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#pocetna-forma h1 {
+	font-size: 30pt;
+	margin-top: 0px;
+	padding-top: 15px;
+}
+
+.forma {
+	text-align: center;
+}
+
+.tamno {
+	background-color: #333333c1;
+}
+
+#konfirmacija {
+	text-align: center;
+	width: 400px;
+    background-color: #ccddffC0;
+    outline: 2px solid black;
+	border: 3px solid #dc0101;
+    outline-offset: 15px;
+    margin-top: 5%;
+    padding: 20px;
+	margin-left: 30%;
+}
